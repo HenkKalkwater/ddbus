@@ -19,11 +19,6 @@ ddbus_lib = library(
     include_directories: src_inc,
 )
 
-ddbus_dep = declare_dependency(
-    include_directories: src_inc,
-    link_with: ddbus_lib
-)
-
 pkgc = import('pkgconfig')
 
 pkgc.generate(
